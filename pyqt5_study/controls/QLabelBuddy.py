@@ -1,7 +1,7 @@
 '''
 QLabel 与 伙伴控件
 
-
+mainLayout.addWidget(控件对象，rowIndex , columnIndex , row , column)
 '''
 
 from PyQt5.QtWidgets import *
