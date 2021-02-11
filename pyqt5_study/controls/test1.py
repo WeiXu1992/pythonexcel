@@ -40,7 +40,7 @@ class QLabelDemo(QWidget):
         paletle = QPalette()
         paletle.setColor(QPalette.Window,Qt.blue)   # 设置背景色
         label1.setPalette(paletle)
-        label1.setAlignment(Qt.AlignCenter)
+        label1.setAlignment(Qt.AlignCenter)     # 设置文字的对齐方式
 
 
         label2.setText("<a href='#'>欢迎使用python Gui程序")
@@ -49,9 +49,9 @@ class QLabelDemo(QWidget):
 
         label3.setToolTip('这是一个图片标签')
 
-        label3.setPixmap(QPixmap("./f1.ico"))
+        label3.setPixmap(QPixmap("./f1.ico"))   # 设置图像
 
-        label4.setOpenExternalLinks(True)
+        label4.setOpenExternalLinks(True)   # 如果设置为真，则可以打开默认浏览器，如果为假，则调用槽函数
         label4.setText("<a href='https://github.com/WeiXu1992/pythonexcel1'>感谢使用python教程")
 
         label4.setAlignment(Qt.AlignRight)
@@ -65,7 +65,7 @@ class QLabelDemo(QWidget):
         vbox.addWidget(label3)
         vbox.addWidget(label4)
 
-        label2.linkHovered.connect(self.linkHovered)
+        label2.linkHovered.connect(self.linkHovered)    # 绑定槽函数
 
         label4.linkActivated.connect(self.linkClicked)
 
