@@ -38,7 +38,7 @@ class QLabelDemo(QWidget):
         label1.setText("<font color=yellow>这是一个黄色标签.</font>")
         label1.setAutoFillBackground(True)
         paletle = QPalette()
-        paletle.setColor(QPalette.Window,Qt.blue)
+        paletle.setColor(QPalette.Window,Qt.blue)   # 设置背景色
         label1.setPalette(paletle)
         label1.setAlignment(Qt.AlignCenter)
 
